@@ -57,6 +57,7 @@
             <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="avatar avatar-sm avatar-online">
+                        <span><?php echo $_SESSION["nombreUsuario"] ?></span>
                         <span class="avatar-title rounded-circle bg-dark">V</span>
 
                     </div>

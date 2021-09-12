@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
     class Conectar
     {
         protected $dbh;
@@ -6,7 +8,8 @@
         protected function Conexion()
         {
             try {
-                $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=certificados", "root", "");
+                //cadena de conexion
+                $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=certidicados", "root", "");
                 return $conectar;
 
             } catch (Throwable $error) {
