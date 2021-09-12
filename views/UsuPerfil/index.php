@@ -1,3 +1,9 @@
+<?php
+    require_once("../../config/conexion.php");
+
+    if (isset($_SESSION["usuarioId"])) {
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,3 +40,10 @@
 </body>
 
 </html>
+
+<?php
+    }else {
+        header("Location:" . Conectar::ruta() . "/views/error/401");
+    }
+
+?>

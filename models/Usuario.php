@@ -24,8 +24,7 @@
 
                     if (is_array($result) and count($result) > 0) {
                         $_SESSION["usuarioId"] = $result["Id"];
-                        $_SESSION["nombreUsuario"] = $result["Nombre"];
-                        $_SESSION["apellidoUsuario"] = $result["ApellidoPaterno"] . " " . $result["ApellidoMaterno"];
+                        $_SESSION["nombreUsuario"] = $result["Nombre"] . " " . $result["ApellidoPaterno"] . " " . $result["ApellidoMaterno"];
                         $_SESSION["email"] = $result["Email"];
                         header("Location:" . Conectar::ruta() . "views/UsuHome/");
                         exit();

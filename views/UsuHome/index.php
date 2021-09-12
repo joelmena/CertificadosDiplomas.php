@@ -1,3 +1,9 @@
+<?php
+    require_once("../../config/conexion.php");
+
+    if (isset($_SESSION["usuarioId"])) {
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +26,9 @@
             <!--  container or container-fluid as per your need           -->
             <div class="container">
 
+                <!-- AQUI EL CUERPO DEL PROYECTO-->
             </div>
+
             <!-- END PLACE PAGE CONTENT HERE -->
         </section>
     </main>
@@ -32,3 +40,9 @@
 </body>
 
 </html>
+<?php
+    }else {
+        header("Location:" . Conectar::ruta() . "/views/error/401");
+    }
+
+?>
