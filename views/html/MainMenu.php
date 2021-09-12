@@ -59,7 +59,7 @@
                 </li>
 
                 <li class="menu-item active">
-                    <a href="/views/UsuHome/" class="menu-link">
+                    <a href="#" class="menu-link">
                         <span class="menu-label">
                             <span class="menu-name">Logout
                             </span>
