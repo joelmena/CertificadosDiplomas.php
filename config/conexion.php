@@ -25,7 +25,7 @@
         }
 
         //ruta principal del proyecto
-        public function ruta()
+        public static function ruta()
         {
             return "http://localhost:90/";
         }
